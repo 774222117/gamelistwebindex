@@ -1,0 +1,844 @@
+.container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/* 整个背景 */
+.backgroundBox {
+	width: 100%;
+	height: 25.17rem;
+	background: url(../images/background.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+}
+/* 顶部 */
+.head {
+	width: 100%;
+	height: 0.62rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* 顶部logo */
+.headLogo {
+	width: 1.36rem;
+	height: 0.38rem;
+	position: absolute;
+	left: 3.1rem;
+	top: 0.12rem;
+	background: url(../images/we4play.png)no-repeat;
+	background-size: cover;
+	/* border: 1px white solid; */
+}
+.headLogo .titleLogo {
+	/* pointer-events:none; */
+}
+/* 顶部下载按钮 */
+.headDown {
+	width: 1.18rem;
+	height: 0.33rem;
+	position: absolute;
+	border-radius: 4px;
+	top: 0.15rem;
+	right: 3.1rem;
+	cursor: pointer;
+	background: url(../images/downGame.png)no-repeat;
+	background-size: cover;
+}
+/* 轮播图 */
+.banner {
+	width: 100%;
+	height: 5.2rem;
+	position: relative;
+	top: 0.62rem;
+	overflow: hidden;
+}
+.banner .bannerBackground {
+	width: 19.2rem;
+	height: 5.2rem;
+	position: absolute;
+	z-index: 2;
+	background: url(../images/shadow.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.banner .downGameBtn {
+	width: 2.4rem;
+	height: 0.6rem;
+	position: absolute;
+	top: 0rem;
+	right: 3.21rem;
+	cursor: pointer;
+	z-index: 33;
+	background: url(../images/bannerDown.png)no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+}
+.banner .bannerContent {
+	width: 19.20rem;
+	height: 5.2rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	transition: all 0.3s linear;
+}
+.banner .bannerSwiper {
+	width: 19.20rem;
+	height: 5.2rem;
+	position: relative;
+	flex-shrink:0;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+.banner .bannerSwiper img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.banner .swiperChange {
+	width: 3.1rem;
+	height: 5.2rem;
+	background: url(../images/rectangle.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 33;
+}
+.banner .gameItemChange {
+	width: 3.09rem;
+	height: 1.04rem;
+	overflow: hidden;
+	cursor: pointer;
+}
+.ischange {
+	background: url(../images/change.png)no-repeat;
+	background-size: cover;
+}
+.gameItemChange .gameName {
+	width: 1.72rem;
+	height: 0.29rem;
+	font-family: Microsoft YaHei UI, Microsoft YaHei UI-Bold;
+	font-weight: 700;
+	text-align: LEFT;
+	color: #ffffff;
+	line-height: 0.26rem;
+	margin: 0.38rem 0 0 0.29rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+/* 折扣热销 */
+.discountHot {
+	width: 13.63rem;
+	height: 4.6rem;
+	position: absolute;
+	top: 6.24rem;
+	left: 2.79rem;
+}
+/* 折扣商品 */
+.discountCommodity {
+	width: 13.60rem;
+	height: 4.06rem;
+	margin-top: 0.16rem;
+	display: flex;
+	align-items: center;
+}
+.discountCommodity .leftBtn {
+	width: 0.62rem;
+	height: 0.48rem;
+}
+.discountCommodity .leftBtn .leftbutton {
+	width: 0.32rem;
+	height: 0.48rem;
+	background: url(../images/leftBtn.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.discountCommodity .centerCommodityBox {
+	width: 100%;
+	height: 4.07rem;
+	overflow: hidden;
+}
+.discountCommodity .centerCommodity {
+	width: 12.46rem;
+	height: 4.07rem;
+	display: flex;
+	transition: all 0.5s linear;
+}
+/* 单个游戏 */
+.discountCommodity .centerCommodity .centerCommodityItem {
+	width: 2.37rem;
+	height: 4.07rem;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.30);
+	background: #1c2029;
+	margin-right: 0.13rem;
+	position: relative;
+	cursor: pointer;
+}
+.discountCommodity .centerCommodity .centerCommodityItem .itemPic {
+	width: 2.37rem;
+	height: 3.53rem;
+	position: relative;
+}
+.itemPic .picShadow {
+	width: 2.37rem;
+	height: 0.7rem;
+	position: absolute;
+	bottom: 0;
+	background: url(../images/picShadow.png)no-repeat;
+	background-size: cover;
+}
+.discountCommodity .centerCommodity .centerCommodityItem .itemPic .price {
+	width: 0.96rem;
+	height: 0.34rem;
+	/* background: url(../images/price.png)no-repeat;
+	background-size: cover; */
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.price .nowPirce{
+	width: 0.62rem;
+	height: 0.23rem;
+	text-align: center;
+	line-height: 0.22rem;
+}
+.price .oldPrice {
+	width: 0.3rem;
+	height: 0.23rem;
+	text-decoration: line-through;
+	color: #cecece;
+	cursor: pointer;
+	text-align: center;
+	line-height: 0.24rem;
+}
+.discountCommodity .centerCommodity .centerCommodityItem .itemPic img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.discountCommodity .centerCommodity .centerCommodityItem .itemPic .discount{
+	width: 0.9rem;
+	height: 0.43rem;
+	background: url(../images/newPrice.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.discount .dicountNumber {
+	width: 0.47rem;
+	height: 0.24rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: 700;
+	text-align: center;
+	margin: 0.09rem 0 0 0.14rem;
+}
+.discountCommodity .centerCommodity .centerCommodityItem .itemGameName {
+	width: 2.37rem;
+	height: 0.53rem;
+	font-family: Microsoft YaHei UI, Microsoft YaHei UI-Bold;
+	font-weight: 700;
+	text-align: center;
+	line-height: 0.53rem;
+}
+.discountCommodity .rightBtn {
+	width: 0.62rem;
+	height: 0.48rem;
+}
+.discountCommodity .rightBtn .rightbutton {
+	width: 0.32rem;
+	height: 0.48rem;
+	background: url(../images/rightBtn.png)no-repeat;
+	background-size: cover;
+	margin-left: 0.16rem;
+	cursor: pointer;
+}
+.discountTitle {
+	width: 12.97rem;
+	height: 0.36rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.margin-left {
+	margin-left: 0.41rem;
+}
+.discountLogoBox {
+	width: 1.36rem;
+	height: 0.3rem;
+	font-weight: 700;
+	text-align: center;
+	line-height: 0.28rem;
+	display: flex;
+	margin-top: 0.06rem;
+}
+/* 折扣热销图标 */
+.dicountLogo {
+	background: url(../images/discount.png)no-repeat;
+	background-size: cover;
+}
+/* 热销排行 */
+.hotRanking {
+	width: 12.97rem;
+	height: 3.62rem;
+	position: absolute;
+	top: 11.31rem;
+	left: 3.13rem;
+}
+/* 热销排行logo */
+.hotRankingLogo {
+	background: url(../images/hotRanking.png)no-repeat;
+	background-size: cover;
+}
+.rankingItemBox {
+	width: 12.96rem;
+	height: 3.06rem;
+	margin-top: 0.2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+/* 单个游戏 */
+.rankingItem {
+	width: 4.2rem;
+	height: 1.48rem;
+	border-radius: 0px 4px 4px 0px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.noRanking {
+	background-color: #1c2029;
+}
+.isRanking {
+	background: linear-gradient(270deg,#2e3445 0%, #161b21);
+	border-radius: 0px 4px 4px 0px;
+}
+.rankingItem .leftPicture {
+	width: 2.51rem;
+	height: 1.19rem;
+	margin-left: 0.1rem;
+	position: relative;
+}
+.rankingItem .leftPicture img {
+	width: 100%;
+	height: 100%;
+	border-radius: 7px;
+	position: absolute;
+}
+.rankingItem .leftPicture .gameNum {
+	width: 0.64rem;
+	height: 0.36rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.gameNum1 {
+	position: absolute;
+	background: url(../images/gameNum1.png)no-repeat;
+	background-size: cover;
+}
+.gameNum2 {
+	position: absolute;
+	background: url(../images/gameNum2.png)no-repeat;
+	background-size: cover;
+}
+.gameNum3 {
+	position: absolute;
+	background: url(../images/gameNum3.png)no-repeat;
+	background-size: cover;
+}
+.gameNum4 {
+	position: absolute;
+	background: url(../images/gameNum4.png)no-repeat;
+	background-size: cover;
+}
+.gameNum5 {
+	position: absolute;
+	background: url(../images/gameNum5.png)no-repeat;
+	background-size: cover;
+}
+.gameNum6 {
+	position: absolute;
+	background: url(../images/gameNum6.png)no-repeat;
+	background-size: cover;
+}
+.rankingItem .rightInfo {
+	width: 1.3rem;
+	height: 0.97rem;
+	margin-left: 0.1rem;
+}
+.rightInfo .name {
+	min-width: 1.2rem;
+	height: 0.24rem;
+	font-family: Microsoft YaHei UI, Microsoft YaHei UI-Bold;
+	font-weight: 700;
+	line-height: 0.24rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.rightInfo .player {
+	width: 1rem;
+	height: 0.16rem;
+	margin-top: 0.03rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Semibold;
+	color: #C9CBD0;
+}
+.rightInfo .gamePrice {
+	width: 0.84rem;
+	height: 0.24rem;
+	margin-top: 0.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: -0.02rem;
+}
+.gamePrice .nowPrice {
+	width: 0.46rem;
+	height: 0.24rem;
+	color: rgba(255,212,57,1);
+}
+.gamePrice .oldPrice {
+	width: 0.22rem;
+	height: 0.24rem;
+	line-height: 0.3rem;
+	text-decoration: line-through;
+}
+/* 新品上新 */
+.newProductLogo {
+	background: url(../images/newProduct.png)no-repeat;
+	background-size: cover;
+}
+.titleLogo {
+	width: 0.36rem;
+	height: 0.3rem;
+}
+.titleText {
+	width: 1.2rem;
+	height: 0.24rem;
+	margin-left: 0.11rem;
+}
+.watchMore {
+	width: 1.02rem;
+	height: 0.33rem;
+	border-radius: 3px;
+	background: url(../images/watichMore.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	position: relative;
+	z-index: 11;
+}
+.watchMore .watchText {
+	width: 0.5rem;
+	height: 0.15rem;
+	/* border: 1px white solid; */
+	font-family: Microsoft YaHei UI, Microsoft YaHei UI-Regular;
+	font-weight: 400;
+	text-align: LEFT;
+	color: #ffffff;
+	margin: 0.08rem 0 0 0.17rem;
+	line-height: 0.2rem;
+}
+/* 新品上新 */
+.newProducts {
+	width: 12.97rem;
+	height: 6.06rem;
+	position: absolute;
+	bottom: 3.8rem;
+	left: 3.1rem;
+}
+.newProducts .newProductsItemContent {
+	width: 12.98rem;
+	height: 5.58rem;
+	margin-top: 0.12rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.newProducts .newProductsItem {
+	width: 4.2rem;
+	height: 2.69rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.isProduct {
+	background: linear-gradient(270deg,rgba(70,77,105,0.53) 0%, rgba(70,77,105,0.00) 100%);
+	border-radius: 0px 4px 4px 0px;
+	box-shadow: 0px 2px 15px 0px #000000; 
+}
+.noProduct {
+	background: #1c2029;
+	border-radius: 0px 4px 4px 0px;
+}
+.newProductsItem .leftPicture {
+	width: 1.61rem;
+	height: 2.41rem;
+	border-radius: 0.04rem;
+	margin-left: 0.1rem;
+	position: relative;
+}
+.newProductsItem .leftPicture img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.leftPicture .discount {
+	width: 0.81rem;
+	height: 0.27rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/newdiscount.png)no-repeat;
+	background-size: cover;
+	text-align: center;
+	line-height: 0.25rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	text-shadow: 1px 2px 4px 0px rgba(0,0,0,0.22); 
+}
+.discount .discountPoint {
+	width: 0.5rem;
+	height: 0.27rem;
+	margin-left: 0.22rem;
+	line-height: 0.24rem;
+}
+.newProductsItem .rightInfo {
+	width: 1.18rem;
+	height: 1.3rem;
+	margin-left: 0.3rem;
+}
+.rightInfo .moreDiscount {
+	width: 1.5rem;
+	height: 0.22rem;
+	margin-top: 0.12rem;
+	font-family: PingFang SC, PingFang SC-Regular;
+	font-weight: 400;
+	text-align: center;
+	color: #ffd339;
+	line-height: 0.22rem;
+	display: flex;
+	justify-content: space-between;
+}
+.moreDiscount .howDiscount {
+	width: 0.69rem;
+	height: 0.21rem;
+	position: relative;
+	background: url(../images/longBox.png)no-repeat;
+	background-size: cover;
+}
+.howDiscount img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.moreDiscount .province {
+	width: 0.69rem;
+	height: 0.21rem;
+	position: relative;
+	margin-left: 0.1rem;
+	background: url(../images/longBox.png)no-repeat;
+	background-size: cover;
+}
+.province img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.rightInfo .nameContent {
+	width: 1.39rem;
+	height: 0.24rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.rightInfo .nameContent .name {
+	width: 112px;
+	height: 24px;
+	font-family: Microsoft YaHei UI, Microsoft YaHei UI-Bold;
+	text-align: left;
+	color: #ffffff;
+	line-height: 24px;
+}
+.nameContent .icon {
+	width: 0.16rem;
+	height: 0.16rem;
+	background: url(../images/steamPic.png)no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.icon img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+/* 公司介绍 */
+.companyIntro {
+	width: 100%;
+	height: 2.23rem;
+	position: absolute;
+	bottom: 1.58rem;
+	background: url(../images/companyIntro.png)no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+.companyIntro .companyStatement {
+	width: 3.06rem;
+	height: 1.25rem;
+	margin-left: 3.1rem;
+}
+.companyStatement .text1 {
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: LEFT;
+	color: #ffffff;
+	line-height: 0.24rem;
+}
+.companyStatement .text2 {
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: LEFT;
+	color: #cbcbcb;
+	line-height: 0.24rem;
+	margin-top: 0.1rem;
+}
+.companyStatement .text3 {
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: LEFT;
+	color: #cbcbcb;
+	line-height: 0.24rem;
+	margin-top: 0.2rem;
+}
+.companyIntro .companyItem {
+	width: 0.86rem;
+	height: 0.92rem;
+	margin-left: 3.02rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: left;
+	color: #ffffff;
+	line-height: 0.2rem;
+}
+.companyItem .text2 {
+	margin-top: 0.1rem;
+	cursor: pointer;
+}
+.companyItem .text3 {
+	margin-top: 0.1rem;
+	cursor: pointer;
+}
+.companyIntro .companyPay {
+	 width: 2.2rem;
+	 height: 0.65rem;
+	 margin-left: 3.9rem;
+}
+.companyPay .text1 {
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: LEFT;
+	color: #ffffff;
+	line-height: 24px;
+}
+.companyPay .payType {
+	width: 2.2rem;
+	height: 0.31rem;
+	margin-top: 0.1rem;
+	display: flex;
+	justify-content: space-between;
+}
+.payType .wxchat {
+	width: 1rem;
+	height: 0.31rem;
+	background: url(../images/wxchat.png)no-repeat;
+	background-size: cover;
+}
+.payType .alipay {
+	width: 1rem;
+	height: 0.31rem;
+	background: url(../images/alipay.png)no-repeat;
+	background-size: cover;
+}
+/* 公司名字 */
+.companyName {
+	width: 100%;
+	height: 1.6rem;
+	position: absolute;
+	bottom: 0;
+}
+.companyName .companyText {
+	min-width: 6.19rem;
+	height: 0.24rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: center;
+	color: #cbcbcb;
+	line-height: 0.24rem;
+	margin: 0.16rem auto 0 auto;
+}
+/* 折扣热销鼠标移入选中样式 */
+.discountShadow {
+	width: 2.37rem;
+	height: 4.07rem;
+	border-radius: 0px 0px 4px 4px;
+	background-color: rgba(0,0,0,0.83);
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.discountBuy {
+	width: 1.58rem;
+	height: 0.4rem;
+	background: url(../images/discountBuy.png)no-repeat;
+	background-size: cover;
+	margin: 1.55rem auto 0 auto;
+}
+
+.isActive {
+	display: block;
+}
+.unActive {
+	display: none;
+}
+
+.bottomDown {
+	width: 19.20rem;
+	height: 1.1rem;
+	position: fixed;
+	bottom: 0;
+	background: url(../images/bottomPic.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	z-index: 44;
+}
+.alertContent {
+	width: 19.20rem;
+	height: 10.80rem;
+	background-color: rgba(0,0,0,0.80);
+	position: fixed;
+	z-index: 99;
+}
+.newUserAlert {
+	width: 13rem;
+	height: 8.61rem;
+	position: absolute;
+	left: 3rem;
+	top: 0.4rem;
+	z-index: 99;
+	background: url(../images/userAlert.png)no-repeat;
+	background-size: cover;
+}
+.newUserAlert .freeGet {
+	width: 2rem;
+	height: 0.5rem;
+	position: absolute;
+	bottom: 2.06rem;
+	left: 6rem;
+	background: url(../images/freeGet.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.newUserAlert .gameContent {
+	width: 6.05rem;
+	height: 1.75rem;
+	position: absolute;
+	left: 3.9rem;
+	top: 3.9rem;
+	display: flex;
+}
+.newUserAlert .close {
+	width: 0.46rem;
+	height: 0.46rem;
+	position: absolute;
+	bottom: 0.6rem;
+	left: 6.7rem;
+	background: url(../images/bottomClose.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.gameContent .bottomLeft {
+	width: 0.53rem;
+	height: 1.75rem;
+	position: relative;
+}
+.gameContent .bottomContent {
+	width: 5rem;
+	height: 1.75rem;
+	overflow: hidden;
+}
+.bottomContent .contentGameBox {
+	width: 5rem;
+	height: 1.75rem;
+	display: flex;
+	transition: all 0.3s linear;
+}
+.contentGameBox .contentItem {
+	width: 1.17rem;
+	height: 1.75rem;
+	margin-right: 0.1rem;
+	flex-shrink: 0;
+	position: relative;
+}
+.contentItem .itemPrice {
+	width: 0.55rem;
+	height: 0.34rem;
+	background: url(../images/leftPrice.png)no-repeat;
+	background-size: cover;
+	font-family: Microsoft YaHei UI, Microsoft YaHei UI-Regular;
+	font-weight: 400;
+	text-align: Left;
+	color: #fdf6dc;
+	line-height: 0.3rem;
+	position: absolute;
+}
+.contentItem .gameName {
+	width: 1.17rem;
+	height: 0.29rem;
+	background: url(../images/NameShadow.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	line-height: 0.3rem;
+}
+.contentItem img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.gameContent .bottomRight {
+	width: 0.53rem;
+	height: 1.75rem;
+	position: relative;
+}
+.bottomLeft .leftBtn {
+	width: 0.23rem;
+	height: 0.35rem;
+	position: absolute;
+	top: 0.75rem;
+	background: url(../images/bottomRight.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.bottomRight .rightBtn {
+	width: 0.23rem;
+	height: 0.35rem;
+	position: absolute;
+	top: 0.75rem;
+	right: 0;
+	background: url(../images/bottomLeft.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
